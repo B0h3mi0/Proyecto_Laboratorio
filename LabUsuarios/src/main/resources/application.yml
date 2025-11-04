@@ -1,0 +1,83 @@
+## =========================================================
+## CONFIGURACI�N GENERAL DE LA APLICACI�N
+## =========================================================
+#spring.application.name=Usuarios
+#server.port=8080
+#
+## =========================================================
+## CONFIGURACI�N ORACLE
+## =========================================================
+#spring.datasource.url=jdbc:oracle:thin:@a8l4bsvsef6piv46_medium?TNS_ADMIN=./wallet_ORACLE
+#spring.datasource.username=laboratorio_db
+#spring.datasource.password=LabService_DB2025
+#spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+#
+## =========================================================
+## CONFIGURACI�N JPA / HIBERNATE
+## =========================================================
+#spring.jpa.database-platform=org.hibernate.dialect.OracleDialect
+#spring.jpa.hibernate.ddl-auto=none
+#spring.jpa.show-sql=true
+#spring.jpa.properties.hibernate.format_sql=true
+
+
+# ===============================
+# CONFIGURACI�N GENERAL DEL SERVIDOR
+# ===============================
+server:
+  port: 8080
+  servlet:
+    context-path: /api  # opcional, para definir prefijo en las rutas
+
+# ===============================
+# CONFIGURACI�N DE LA BASE DE DATOS ORACLE
+# ===============================
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@a8l4bsvsef6piv46_medium?TNS_ADMIN=./wallet_ORACLE
+    username: ${ORACLE_USER}
+    password: ${ORACLE_PASS}
+    driver-class-name: oracle.jdbc.OracleDriver
+
+jpa:
+  hibernate:
+    ddl-auto: none  # create, update, validate o none
+  show-sql: true
+  properties:
+    hibernate:
+      format_sql: true
+      dialect: org.hibernate.dialect.OracleDialect
+
+# Control de perfiles (opcional)
+#profiles:
+#  active: dev
+
+# ===============================
+# CONFIGURACION DE JWT (TOKEN DE SEGURIDAD)
+# ===============================
+#application:
+#  security:
+#    jwt:
+#      secret-key: ${JWT_SUPER_SECRET_KEY}  # Debe ser larga y privada
+#      expiration: 86400000  # Tiempo de expiraci�n en milisegundos (24 horas) 1
+#      refresh-token:
+#        expiration: 604800000 # 7 days
+#  issuer: "LabUsuarios"  # Identificador del emisor del token
+# ===============================
+# CONFIGURACI�N DE LOGGING
+# ===============================
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    org.hibernate.SQL: DEBUG
+  file:
+    name: logs/app.log  # Guarda logs en un archivo local
+
+# ===============================
+# CONFIGURACI�N PERSONALIZADA
+# ===============================
+app:
+  nombre: "Servicio de Gesti�n de Usuarios"
+  version: "1.0.0"
+  descripcion: "API REST con Spring Boot, Oracle y JWT"

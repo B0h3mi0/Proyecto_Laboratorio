@@ -1,0 +1,164 @@
+2025-11-03T20:57:50.941-03:00  INFO 7148 --- [restartedMain] c.l.L.LaboratoriosApplication            : Starting LaboratoriosApplication using Java 21.0.6 with PID 7148 (C:\Users\sebas\OneDrive\Escritorio\Ing de Software\Desarrollo_FS\FS3\proyectoBimestre\Laboratorio_Service\LabLaboratorios\target\classes started by sebas in C:\Users\sebas\OneDrive\Escritorio\Ing de Software\Desarrollo_FS\FS3\proyectoBimestre\Laboratorio_Service\LabLaboratorios)
+2025-11-03T20:57:50.959-03:00  INFO 7148 --- [restartedMain] c.l.L.LaboratoriosApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-11-03T20:57:51.085-03:00  INFO 7148 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\sebas\.m2\repository\com\oracle\database\jdbc\ojdbc11\23.7.0.25.01\ojdbc11-23.7.0.25.01.jar referenced one or more files that do not exist: file:/C:/Users/sebas/.m2/repository/com/oracle/database/jdbc/ojdbc11/23.7.0.25.01/oraclepki.jar
+2025-11-03T20:57:51.087-03:00  INFO 7148 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03T20:57:51.087-03:00  INFO 7148 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03T20:57:52.850-03:00  INFO 7148 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03T20:57:52.854-03:00  INFO 7148 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-03T20:57:52.960-03:00  INFO 7148 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.laboratorio.LabLaboratorios.repository.LaboratorioRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-03T20:57:52.962-03:00  INFO 7148 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 0 JDBC repository interfaces.
+2025-11-03T20:57:52.976-03:00  INFO 7148 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03T20:57:52.992-03:00  INFO 7148 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-03T20:57:53.040-03:00  INFO 7148 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2025-11-03T20:57:54.200-03:00  INFO 7148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-11-03T20:57:54.216-03:00  INFO 7148 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-03T20:57:54.216-03:00  INFO 7148 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-03T20:57:54.311-03:00  INFO 7148 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-11-03T20:57:54.311-03:00  INFO 7148 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3224 ms
+2025-11-03T20:57:54.952-03:00  INFO 7148 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-03T20:57:56.658-03:00  INFO 7148 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@23cc6203
+2025-11-03T20:57:56.662-03:00  INFO 7148 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-03T20:57:56.741-03:00  INFO 7148 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-03T20:57:56.891-03:00  INFO 7148 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-03T20:57:56.995-03:00  INFO 7148 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-03T20:57:57.820-03:00  INFO 7148 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-03T20:57:58.535-03:00  INFO 7148 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 19.29
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-03T20:58:00.504-03:00  INFO 7148 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-03T20:58:00.512-03:00  INFO 7148 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-03T20:58:01.397-03:00  WARN 7148 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-03T20:58:01.754-03:00 DEBUG 7148 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2025-11-03T20:58:02.096-03:00 DEBUG 7148 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-03T20:58:02.349-03:00 DEBUG 7148 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-03T20:58:02.644-03:00 DEBUG 7148 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-03T20:58:03.568-03:00  INFO 7148 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-03T20:58:03.646-03:00  INFO 7148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/api'
+2025-11-03T20:58:04.014-03:00  INFO 7148 --- [restartedMain] c.l.L.LaboratoriosApplication            : Started LaboratoriosApplication in 14.455 seconds (process running for 15.9)
+2025-11-03T22:21:49.499-03:00  WARN 7148 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@6ed61793 (ORA-17008: Conexión cerrada
+https://docs.oracle.com/error-help/db/ora-17008/). Possibly consider using a shorter maxLifetime value.
+2025-11-03T22:21:51.892-03:00  WARN 7148 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@2789dce3 (ORA-17900: Operación no válida. No conectado.
+https://docs.oracle.com/error-help/db/ora-17900/). Possibly consider using a shorter maxLifetime value.
+2025-11-03T22:21:51.895-03:00  WARN 7148 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m24s761ms443µs200ns).
+2025-11-03T22:21:51.937-03:00  WARN 7148 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@ed1491c (ORA-17900: Operación no válida. No conectado.
+https://docs.oracle.com/error-help/db/ora-17900/). Possibly consider using a shorter maxLifetime value.
+2025-11-03T22:21:51.951-03:00  WARN 7148 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@6ee2072e (ORA-17900: Operación no válida. No conectado.
+https://docs.oracle.com/error-help/db/ora-17900/). Possibly consider using a shorter maxLifetime value.
+2025-11-03T22:21:51.994-03:00  WARN 7148 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@50c335d2 (ORA-17900: Operación no válida. No conectado.
+https://docs.oracle.com/error-help/db/ora-17900/). Possibly consider using a shorter maxLifetime value.
+2025-11-03T22:21:52.037-03:00  WARN 7148 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@7888d1e9 (ORA-17900: Operación no válida. No conectado.
+https://docs.oracle.com/error-help/db/ora-17900/). Possibly consider using a shorter maxLifetime value.
+2025-11-03T22:21:52.049-03:00  WARN 7148 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@5678b2c3 (ORA-17900: Operación no válida. No conectado.
+https://docs.oracle.com/error-help/db/ora-17900/). Possibly consider using a shorter maxLifetime value.
+2025-11-03T22:21:52.102-03:00  WARN 7148 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@6ae6b705 (ORA-17900: Operación no válida. No conectado.
+https://docs.oracle.com/error-help/db/ora-17900/). Possibly consider using a shorter maxLifetime value.
+2025-11-03T22:21:52.274-03:00  WARN 7148 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@5fda1048 (ORA-17900: Operación no válida. No conectado.
+https://docs.oracle.com/error-help/db/ora-17900/). Possibly consider using a shorter maxLifetime value.
+2025-11-03T22:21:52.331-03:00  WARN 7148 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@7331ba43 (ORA-17900: Operación no válida. No conectado.
+https://docs.oracle.com/error-help/db/ora-17900/). Possibly consider using a shorter maxLifetime value.
+2025-11-03T22:23:04.203-03:00  INFO 7148 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-03T22:23:04.276-03:00  INFO 7148 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-03T22:23:04.342-03:00  INFO 7148 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-03T22:23:04.432-03:00  INFO 7148 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-03T22:23:04.556-03:00  INFO 7148 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-03T22:26:39.176-03:00  INFO 16632 --- [restartedMain] c.l.L.LaboratoriosApplication            : Starting LaboratoriosApplication using Java 21.0.6 with PID 16632 (C:\Users\sebas\OneDrive\Escritorio\Ing de Software\Desarrollo_FS\FS3\proyectoBimestre\Laboratorio_Service\LabLaboratorios\target\classes started by sebas in C:\Users\sebas\OneDrive\Escritorio\Ing de Software\Desarrollo_FS\FS3\proyectoBimestre\Laboratorio_Service\LabLaboratorios)
+2025-11-03T22:26:39.220-03:00  INFO 16632 --- [restartedMain] c.l.L.LaboratoriosApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-11-03T22:26:39.571-03:00  INFO 16632 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\sebas\.m2\repository\com\oracle\database\jdbc\ojdbc11\23.7.0.25.01\ojdbc11-23.7.0.25.01.jar referenced one or more files that do not exist: file:/C:/Users/sebas/.m2/repository/com/oracle/database/jdbc/ojdbc11/23.7.0.25.01/oraclepki.jar
+2025-11-03T22:26:39.572-03:00  INFO 16632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03T22:26:39.573-03:00  INFO 16632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03T22:26:43.832-03:00  INFO 16632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03T22:26:43.842-03:00  INFO 16632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-03T22:26:43.981-03:00  INFO 16632 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.laboratorio.LabLaboratorios.repository.LaboratorioRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-03T22:26:43.982-03:00  INFO 16632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 0 JDBC repository interfaces.
+2025-11-03T22:26:44.028-03:00  INFO 16632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03T22:26:44.031-03:00  INFO 16632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-03T22:26:44.149-03:00  INFO 16632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 1 JPA repository interface.
+2025-11-03T22:26:48.339-03:00  INFO 16632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-11-03T22:26:48.407-03:00  INFO 16632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-03T22:26:48.409-03:00  INFO 16632 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-03T22:26:48.742-03:00  INFO 16632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-11-03T22:26:48.745-03:00  INFO 16632 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9169 ms
+2025-11-03T22:26:50.693-03:00  INFO 16632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-03T22:26:54.244-03:00  INFO 16632 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5485e537
+2025-11-03T22:26:54.253-03:00  INFO 16632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-03T22:26:54.511-03:00  INFO 16632 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-03T22:26:54.976-03:00  INFO 16632 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-03T22:26:55.393-03:00  INFO 16632 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-03T22:26:57.417-03:00  INFO 16632 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-03T22:26:59.367-03:00  INFO 16632 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 19.29
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-03T22:27:02.620-03:00  INFO 16632 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-03T22:27:02.632-03:00  INFO 16632 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-03T22:27:03.349-03:00  WARN 16632 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-03T22:27:03.797-03:00 DEBUG 16632 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2025-11-03T22:27:04.170-03:00 DEBUG 16632 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-03T22:27:04.272-03:00 DEBUG 16632 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-03T22:27:04.520-03:00 DEBUG 16632 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-03T22:27:05.406-03:00  WARN 16632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-11-03T22:27:05.611-03:00  INFO 16632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/api'
+2025-11-03T22:27:05.655-03:00  INFO 16632 --- [restartedMain] c.l.L.LaboratoriosApplication            : Started LaboratoriosApplication in 30.37 seconds (process running for 33.197)
+2025-11-03T22:28:11.917-03:00  INFO 16632 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03T22:28:11.922-03:00  INFO 16632 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-03T22:28:11.929-03:00 DEBUG 16632 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-11-03T22:28:11.931-03:00 DEBUG 16632 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-11-03T22:28:11.933-03:00 DEBUG 16632 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-11-03T22:28:11.963-03:00 DEBUG 16632 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1e184f24
+2025-11-03T22:28:11.967-03:00 DEBUG 16632 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@33070747
+2025-11-03T22:28:11.968-03:00 DEBUG 16632 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-11-03T22:28:11.970-03:00  INFO 16632 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 45 ms
+2025-11-03T22:28:12.018-03:00 DEBUG 16632 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/laboratorio/all", parameters={}
+2025-11-03T22:28:12.066-03:00 DEBUG 16632 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-11-03T22:28:12.274-03:00 DEBUG 16632 --- [http-nio-8081-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-11-03T22:28:12.293-03:00 DEBUG 16632 --- [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.laboratorio.LabLaboratorios.exceptionhandler.GlobalExceptionHandler#handleGlobalException(Exception, WebRequest)
+2025-11-03T22:28:12.298-03:00 ERROR 16632 --- [http-nio-8081-exec-2] c.l.L.e.GlobalExceptionHandler           : An unexpected error occurred. No static resource laboratorio/all.
+2025-11-03T22:28:12.368-03:00 DEBUG 16632 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-03T22:28:12.375-03:00 DEBUG 16632 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{details=uri=/api/laboratorio/all, message=No static resource laboratorio/all., timestamp=2025-11-03 (truncated)...]
+2025-11-03T22:28:12.445-03:00  WARN 16632 --- [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource laboratorio/all.]
+2025-11-03T22:28:12.464-03:00 DEBUG 16632 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-11-03T22:28:47.297-03:00 DEBUG 16632 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/laboratorios/all", parameters={}
+2025-11-03T22:28:47.308-03:00 DEBUG 16632 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.laboratorio.LabLaboratorios.controller.LaboratoriosController#getAllLaboratorios()
+2025-11-03T22:28:47.368-03:00  INFO 16632 --- [http-nio-8081-exec-5] c.l.L.controller.LaboratoriosController  : Obteninendo todos los Laboratorios
+2025-11-03T22:28:47.369-03:00  INFO 16632 --- [http-nio-8081-exec-5] c.l.L.service.LaboratorioServiceImpl     : Buscando todos los laboratorios - metodo getAllLaboratorios
+2025-11-03T22:28:48.672-03:00 DEBUG 16632 --- [http-nio-8081-exec-5] org.hibernate.SQL                        : select le1_0.id,le1_0.direccion,le1_0.nom_laboratorio,le1_0.telefono,le1_0.tipo_analisis from laboratorio le1_0
+2025-11-03T22:28:49.081-03:00  INFO 16632 --- [http-nio-8081-exec-5] c.l.L.controller.LaboratoriosController  : Laboratorios Obtenidos 8 
+2025-11-03T22:28:49.092-03:00 DEBUG 16632 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-03T22:28:49.094-03:00 DEBUG 16632 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.laboratorio.LabLaboratorios.model.LaboratorioEntity@7f212b8d, com.laboratorio.LabLaboratorios.m (truncated)...]
+2025-11-03T22:28:49.210-03:00 DEBUG 16632 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-03T22:29:05.177-03:00 DEBUG 16632 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : DELETE "/api/laboratorios/2", parameters={}
+2025-11-03T22:29:05.178-03:00 DEBUG 16632 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.laboratorio.LabLaboratorios.controller.LaboratoriosController#deleteLaboratorio(Long)
+2025-11-03T22:29:05.216-03:00  INFO 16632 --- [http-nio-8081-exec-6] c.l.L.controller.LaboratoriosController  : Eliminando Laboratorio con ID: 2
+2025-11-03T22:29:05.217-03:00  INFO 16632 --- [http-nio-8081-exec-6] c.l.L.service.LaboratorioServiceImpl     : Eliminando Laboratorio por ID : 2 - metodo deleteLaboratorioById
+2025-11-03T22:29:05.263-03:00 DEBUG 16632 --- [http-nio-8081-exec-6] org.hibernate.SQL                        : select le1_0.id,le1_0.direccion,le1_0.nom_laboratorio,le1_0.telefono,le1_0.tipo_analisis from laboratorio le1_0 where le1_0.id=?
+2025-11-03T22:29:05.324-03:00  INFO 16632 --- [http-nio-8081-exec-6] c.l.L.service.LaboratorioServiceImpl     : Eliminando Laboratorio - metodo deleteLaboratorioById
+2025-11-03T22:29:05.324-03:00  INFO 16632 --- [http-nio-8081-exec-6] c.l.L.service.LaboratorioServiceImpl     : Id Laboratorio 2 - metodo deleteLaboratorioById
+2025-11-03T22:29:05.402-03:00 DEBUG 16632 --- [http-nio-8081-exec-6] org.hibernate.SQL                        : delete from laboratorio where id=?
+2025-11-03T22:29:05.447-03:00  INFO 16632 --- [http-nio-8081-exec-6] c.l.L.service.LaboratorioServiceImpl     : Laboratorio eliminado satisfactoriamente - metodo deleteLaboratorioById
+2025-11-03T22:29:05.448-03:00  INFO 16632 --- [http-nio-8081-exec-6] c.l.L.controller.LaboratoriosController  : Laboratorio eliminado satisfactoriamente. Laboratorio ID: 2
+2025-11-03T22:29:05.451-03:00 DEBUG 16632 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-03T22:29:05.451-03:00 DEBUG 16632 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2025-11-03T22:29:05.452-03:00 DEBUG 16632 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 204 NO_CONTENT
+2025-11-03T22:29:15.403-03:00 DEBUG 16632 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/laboratorios/3", parameters={}
+2025-11-03T22:29:15.406-03:00 DEBUG 16632 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.laboratorio.LabLaboratorios.controller.LaboratoriosController#getLaboratorioById(Long)
+2025-11-03T22:29:15.408-03:00  INFO 16632 --- [http-nio-8081-exec-3] c.l.L.controller.LaboratoriosController  : Obteniendo Laboratorio by ID: 3
+2025-11-03T22:29:15.408-03:00  INFO 16632 --- [http-nio-8081-exec-3] c.l.L.service.LaboratorioServiceImpl     : Buscando Laboratorio por ID 3 - metodo getLaboratorioById
+2025-11-03T22:29:15.418-03:00 DEBUG 16632 --- [http-nio-8081-exec-3] org.hibernate.SQL                        : select le1_0.id,le1_0.direccion,le1_0.nom_laboratorio,le1_0.telefono,le1_0.tipo_analisis from laboratorio le1_0 where le1_0.id=?
+2025-11-03T22:29:15.450-03:00  INFO 16632 --- [http-nio-8081-exec-3] c.l.L.controller.LaboratoriosController  : Laboratorio encontrado by ID: 3
+2025-11-03T22:29:15.454-03:00 DEBUG 16632 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-03T22:29:15.456-03:00 DEBUG 16632 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.laboratorio.LabLaboratorios.model.LaboratorioEntity@2d18852f]
+2025-11-03T22:29:15.459-03:00 DEBUG 16632 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-03T22:37:17.822-03:00  INFO 16632 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-03T22:37:17.885-03:00  INFO 16632 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-03T22:37:17.917-03:00  INFO 16632 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-03T22:37:17.959-03:00  INFO 16632 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-03T22:37:18.095-03:00  INFO 16632 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
