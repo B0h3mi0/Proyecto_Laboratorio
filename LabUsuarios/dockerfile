@@ -1,14 +1,22 @@
-FROM openjdk:21-ea-24-oracle
+FROM maven:3.9-eclipse-temurin-21 AS build
+WORKDIR /build
+COPY pom.xml .
+COPY src ./src
+RUN mvn -q -DskipTests package
 
+# Imagen final
+FROM eclipse-temurin:21-jre
 WORKDIR /app
 
-# Copia el JAR generado
-COPY target/LabUsuarios-0.0.1-SNAPSHOT.jar app.jar
+# Copiar el jar
+COPY --from=build /build/target/LabUsuarios-0.0.1-SNAPSHOT.jar app.jar
 
-# Copia la carpeta del wallet Oracle
-COPY wallet_ORACLE ./wallet_ORACLE
+# Crear carpeta donde Docker montará el wallet
+RUN mkdir -p /app/wallet_ORACLE
 
-# Exponer puerto del microservicio
+# Variable necesaria para Oracle Wallet
+ENV TNS_ADMIN=/app/wallet_ORACLE
+
 EXPOSE 8080
-
-CMD ["java", "-jar", "app.jar"]
+ENV JAVA_OPTS=""
+ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]

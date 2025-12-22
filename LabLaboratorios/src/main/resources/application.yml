@@ -8,23 +8,22 @@ server:
     context-path: /api  # opcional, para definir prefijo en las rutas
 
 # ===============================
-# CONFIGURACION DE LA BASE DE DATOS ORACLE
+# CONFIGURACION DE LA BASE DE DATOS POSTGRES
 # ===============================
 spring:
   datasource:
-    url: jdbc:oracle:thin:@a8l4bsvsef6piv46_medium?TNS_ADMIN=./wallet_ORACLE
-    username: ${ORACLE_USER}
-    password: ${ORACLE_PASS}
-    driver-class-name: oracle.jdbc.OracleDriver
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASS}
+    driver-class-name: org.postgresql.Driver
 
-jpa:
-  hibernate:
-    ddl-auto: none  # create, update, validate o none
-  show-sql: true
-  properties:
+  jpa:
     hibernate:
-      format_sql: true
-      dialect: org.hibernate.dialect.OracleDialect
+      ddl-auto: update  # facilitar pruebas; ajustar en prod
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
 
 # Control de perfiles (opcional)
 #profiles:

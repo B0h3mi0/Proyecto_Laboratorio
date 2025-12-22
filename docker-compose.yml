@@ -1,0 +1,68 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: postgres
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - app-net
+  labusuarios:
+    build:
+      context: ./LabUsuarios
+      dockerfile: dockerfile
+    image: labusuarios:latest
+    container_name: labusuarios
+    ports:
+      - "${USUARIOS_PORT}:8080"
+    environment:
+      - DB_URL=${DB_URL}
+      - DB_USER=${DB_USER}
+      - DB_PASS=${DB_PASS}
+    depends_on:
+      - postgres
+    networks:
+      - app-net
+
+  lablaboratorios:
+    build:
+      context: ./LabLaboratorios
+      dockerfile: dockerfile
+    image: lablaboratorios:latest
+    container_name: lablaboratorios
+    ports:
+      - "${LABS_PORT}:8081"
+    environment:
+      - DB_URL=${DB_URL}
+      - DB_USER=${DB_USER}  
+      - DB_PASS=${DB_PASS}
+    
+    depends_on:
+      - postgres
+    networks:
+      - app-net
+
+  angular_app:
+    build:
+      context: ./angular_proyecto
+      dockerfile: Dockerfile
+    image: angular_app:latest
+    container_name: angular_app
+    ports:
+      - "${ANGULAR_PORT}:4200"
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    driver: bridge
+
+volumes:
+  pgdata:
